@@ -1,0 +1,100 @@
+@font-face {
+    font-family: customFont;
+    src: url(../Righteous/Righteous-Regular.ttf);
+}
+body{
+    background-color: #202441;
+    text-align: center;
+    font-family: customFont;
+    color: white;
+}
+.login{
+    background-color: #202441;
+    width: 40%;
+    margin: 20px 30% 20px 30%;
+}
+
+/* INPUT */
+
+@keyframes inputGo_Go {
+    from{
+        background-color: #353853;
+        border: solid 5px #353853;
+    }to{
+        background-color: #b77dd4;
+        border: solid 5px #b77dd4;
+    }
+}
+@keyframes inputGo_Go_BACK {
+    from{
+        background-color: #b77dd4;
+        border: solid 5px #b77dd4;
+    }to{
+        background-color: #353853;
+        border: solid 5px #353853;
+    }
+}
+.login input{
+    animation: inputGo_Go_BACK ease 0.5s;
+    width: 80%;
+    height: 40px;
+    margin: 20px 10% 20px 10%;
+    background-color: #353853;
+    border: solid 5px #353853;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-family: customFont;
+}
+.login input:focus, .login input:hover{
+    animation: inputGo_Go 0.5s ease;
+    background-color: #b77dd4;
+    border: solid 5px #b77dd4;
+}
+
+/* Register Button */
+/* Login Button */
+
+@keyframes logButtonGo_Go {
+    from{
+        background-color: #353853;
+        border: solid 5px #353853;
+    }to{
+        background-color: #b77dd4;
+        border: solid 5px #b77dd4;
+    }
+}
+@keyframes logButtonGo_Go_BACK {
+    from{
+        background-color: #b77dd4;
+        border: solid 5px #b77dd4;
+    }to{
+        background-color: #353853;
+        border: solid 5px #353853;
+    }
+}
+.login button{
+    animation: logButtonGo_Go_BACK 0.5s ease;
+    width: 20%;
+    height: 40px;
+    margin: 20px 10% 20px 10%;
+    background-color: #353853;
+    border: solid 5px #353853;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-family: customFont;
+    
+}
+.login button:hover, .login button:focus{
+    animation: logButtonGo_Go 0.5s ease forwards;
+    background-color: #b77dd4;
+    border: solid 5px #b77dd4;
+}
+
+input, button{
+    font-size: large;
+}
+h1{
+    font-size: 80px;
+}
